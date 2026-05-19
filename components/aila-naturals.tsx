@@ -269,9 +269,14 @@ export function Header() {
           <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
         </nav>
 
-        <button className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded-xl transition-all font-medium text-sm">
-          Shop Now
-        </button>
+       <a
+  href="https://wa.me/919956098430?text=Hi%20Aila%20Naturals%2C%20I%20want%20to%20order%20the%20Sandalwood%20Face%20Pack."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-3 rounded-xl shadow-md transition-all font-medium inline-block"
+>
+  Order Sandalwood Face Pack
+</a>
 
         <button 
           className="md:hidden p-2"
