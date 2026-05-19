@@ -57,13 +57,13 @@ export function BrandStory() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
       <div className="bg-muted rounded-[2rem] p-8 md:p-10 shadow-lg grid md:grid-cols-2 gap-10 items-center">
-        <Image
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop"
-          alt="Natural herbal ingredients for skincare"
-          width={600}
-          height={350}
-          className="rounded-[1.5rem] h-[300px] md:h-[350px] w-full object-cover"
-        />
+       <Image
+  src="https://coulif.in/product/pure-sandalwood-chandan-stick-100-original-sandalwood-non-comparable-originality/"
+  alt="Natural herbal ingredients for skincare"
+  width={600}
+  height={350}
+  className="rounded-[1.5rem] h-[300px] md:h-[350px] w-full object-cover"
+/>
 
         <div>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-foreground">Rooted In Nature</h2>
