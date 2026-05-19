@@ -29,7 +29,7 @@ export function HeroSection() {
           </div>
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Nourish your skin with the purity of nature. Aila Naturals blends
+            Nourish yourself with the purity of nature. Aila Naturals blends
             herbal ingredients with timeless beauty rituals to create skincare
             that feels gentle, earthy, and luxurious.
           </p>
