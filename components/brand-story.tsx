@@ -18,7 +18,7 @@ export function BrandStory() {
             Rooted In Nature
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-            At Aila Naturals, we believe skincare should feel pure, calming,
+            At aila naturals, we believe skincare should feel pure, calming,
             and connected to nature. Our herbal formulas are inspired by
             traditional beauty rituals and crafted with carefully selected
             natural ingredients.
