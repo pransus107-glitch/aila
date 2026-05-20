@@ -22,6 +22,12 @@ const products = [
     "A deep cleansing scrub infused with besan to gently exfoliate, remove tan, and leave your skin smooth, radiant, and glowing.",
    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-WmPcFGFwkY6AXe0RT2721330QxVxAB.jpeg",
   },
+  {
+   name: "Rose Clay Mask",
+   description:
+    "A purifying and glowing mask infused with rose clay to detoxify, purify, and brighten your skin while refining pores and revealing a radiant glow.",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rose%20mask-pC688BFynwWRMKt67QhAOpBJvDdiYW.jpeg",
+  },
 ]
 
 export function ProductsSection() {
