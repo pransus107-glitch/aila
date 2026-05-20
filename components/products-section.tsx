@@ -52,7 +52,7 @@ export function ProductsSection() {
            <div className="relative h-[300px] md:h-[350px] overflow-hidden">
              <Image
                 src={product.image}
-               alt={`Aila Naturals ${product.name}`}
+               alt={`aila naturals ${product.name}`}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
              />

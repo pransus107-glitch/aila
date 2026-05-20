@@ -26,7 +26,7 @@ export function WhyChooseUs() {
     <section className="bg-secondary py-16 md:py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-10 md:mb-12">
-          Why Aila Naturals?
+          Why aila naturals?
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">

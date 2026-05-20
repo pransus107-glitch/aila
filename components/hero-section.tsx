@@ -19,18 +19,18 @@ export function HeroSection() {
             <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-card p-2 shadow-md overflow-hidden">
               <Image
                 src="/images/logo.jpeg"
-                alt="Aila Naturals Logo"
+                alt="aila naturals Logo"
                 fill
                 className="object-contain"
               />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-balance">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Nourish yourself with the purity of nature. Aila Naturals blends
+            Nourish yourself with the purity of nature. aila naturals blends
             herbal ingredients with timeless beauty rituals to create skincare
             that feels gentle, earthy, and luxurious.
           </p>

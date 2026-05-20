@@ -16,8 +16,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Aila Naturals | Herbal Skincare',
-  description: 'Nourish your skin with the purity of nature. Aila Naturals blends herbal ingredients with timeless beauty rituals to create skincare that feels gentle, earthy, and luxurious.',
+  title: 'aila naturals | Herbal Skincare',
+  description: 'Nourish your skin with the purity of nature. aila naturals blends herbal ingredients with timeless beauty rituals to create skincare that feels gentle, earthy, and luxurious.',
   generator: 'v0.app',
   icons: {
     icon: [
