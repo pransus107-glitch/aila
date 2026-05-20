@@ -1,10 +1,10 @@
 "use client"
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+//import Image from "next/image"
+//import { Button } from "@/components/ui/button"
 
-const products = [
-  {
+//const products = [
+//  {
 //    name: "Sandalwood Face Pack",
 //    description:
  //     "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
@@ -18,7 +18,7 @@ const products = [
   },
 ]
 
-export function ProductsSection() {
+//export function ProductsSection() {
 //  return (
  //   <section className="max-w-7xl mx-auto px-6 py-16 md:py-20">
   //    <div className="text-center mb-12 md:mb-14">
@@ -63,4 +63,4 @@ export function ProductsSection() {
   //    </div>
 //    </section>
 //  )
-}
+//}
