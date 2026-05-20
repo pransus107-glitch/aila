@@ -82,7 +82,7 @@ export function BrandStory() {
     </section>
   )
 }
-{/*
+
 export function ProductsSection() {
   const products = [
     {
@@ -141,7 +141,7 @@ export function ProductsSection() {
     </section>
   )
 }
-*/}
+
 export function WhyChooseUs() {
   const features = [
     {
