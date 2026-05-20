@@ -85,7 +85,7 @@ export function ProductsSection() {
     {
       name: "Sandalwood Face Pack",
       description: "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-      image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1200&auto=format&fit=crop",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-cIGNy4TZfb6n1tsv4zyll9r9i14lRj.jpeg",
       alt: "Aila Naturals Sandalwood Face Pack"
     },
     {

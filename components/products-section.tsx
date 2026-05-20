@@ -8,7 +8,7 @@ const products = [
    name: "Sandalwood Face Pack",
    description:
     "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-   image: "/images/sandalwood-face-pack.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-cIGNy4TZfb6n1tsv4zyll9r9i14lRj.jpeg",
   },
   {
  name: "Rice Flour Scrub",
