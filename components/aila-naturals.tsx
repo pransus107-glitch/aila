@@ -112,7 +112,7 @@ export function ProductsSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+      <div className="grid md:grid-cols-3 gap-8 md:gap-10">
         {products.map((product) => (
           <div 
             key={product.name}
