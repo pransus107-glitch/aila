@@ -85,7 +85,7 @@ export function ProductsSection() {
     {
       name: "Sandalwood Face Pack",
       description: "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-cIGNy4TZfb6n1tsv4zyll9r9i14lRj.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-54BVBBVkT3nxDPkmHi1gwlGIOukSK7.jpeg",
       alt: "Aila Naturals Sandalwood Face Pack"
     },
     {
@@ -123,7 +123,7 @@ export function ProductsSection() {
               alt={product.alt}
               width={600}
               height={350}
-              className="h-[280px] md:h-[350px] w-full object-cover"
+              className="h-[280px] md:h-[350px] w-full object-contain"
             />
 
             <div className="p-6 md:p-8">

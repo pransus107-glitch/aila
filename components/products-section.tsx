@@ -8,7 +8,7 @@ const products = [
    name: "Sandalwood Face Pack",
    description:
     "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-cIGNy4TZfb6n1tsv4zyll9r9i14lRj.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-54BVBBVkT3nxDPkmHi1gwlGIOukSK7.jpeg",
   },
   {
  name: "Rice Flour Scrub",
@@ -54,7 +54,7 @@ export function ProductsSection() {
                 src={product.image}
                alt={`aila naturals ${product.name}`}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-contain group-hover:scale-105 transition-transform duration-500"
              />
             </div>
 
