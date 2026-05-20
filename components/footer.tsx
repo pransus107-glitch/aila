@@ -19,7 +19,7 @@ export function Footer() {
           aila naturals
         </h3>
         <p className="text-primary-foreground/80">
-          Herbal skincare inspired by nature.
+          For more queries either get in touch with us or drop a mail at admin@ailanaturals.co.in
         </p>
         
         <div className="mt-6 pt-6 border-t border-primary-foreground/20">
