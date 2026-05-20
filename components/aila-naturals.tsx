@@ -93,6 +93,12 @@ export function ProductsSection() {
       description: "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
       image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop",
       alt: "Aila Naturals Rice Flour Scrub"
+    },
+    {
+      name: "Besan Glow Polish",
+      description: "A deep cleansing scrub infused with besan to gently exfoliate, remove tan, and leave your skin smooth, radiant, and glowing.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-WmPcFGFwkY6AXe0RT2721330QxVxAB.jpeg",
+      alt: "Aila Naturals Besan Glow Polish"
     }
   ]
 
@@ -106,7 +112,7 @@ export function ProductsSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
         {products.map((product) => (
           <div 
             key={product.name}
@@ -129,7 +135,7 @@ export function ProductsSection() {
               </p>
 
               <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-3 rounded-xl shadow-md transition-all font-medium">
-                Buy Now
+                Coming Soon
               </button>
             </div>
           </div>
