@@ -71,12 +71,9 @@ export function BrandStory() {
             At Aila Naturals, we believe skincare should feel pure, calming,
             and connected to nature. Our herbal formulas are inspired by
             traditional beauty rituals and crafted with carefully selected
-            natural ingredients.
-          </p>
-          <p className="text-muted-foreground leading-relaxed text-lg">
-            Every product is designed to refresh, cleanse, and restore your
+            natural ingredients. Every product is designed to refresh, cleanse, and restore your
             skin while giving you a luxurious self-care experience.
-          </p>
+          
         </div>
       </div>
     </section>
