@@ -97,7 +97,7 @@ export function ProductsSection() {
     {
       name: "Besan Glow Polish",
       description: "A deep cleansing scrub infused with besan to gently exfoliate, remove tan, and leave your skin smooth, radiant, and glowing.",
-      image: "/images/besan-glow-polish.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-WmPcFGFwkY6AXe0RT2721330QxVxAB.jpeg",
       alt: "Aila Naturals Besan Glow Polish"
     }
   ]
