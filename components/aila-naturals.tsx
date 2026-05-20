@@ -38,14 +38,14 @@ export function HeroSection() {
 
         <div className="relative">
           <div className="bg-secondary rounded-[2rem] p-6 md:p-8 shadow-2xl">
-            <Image
-              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop"
-              alt="Herbal skincare products with natural ingredients"
-              width={600}
-              height={500}
-              className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-cover"
-              priority
-            />
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-H7AooJP8ClTRiObEf3b39C4RRhQOSI.jpeg"
+            alt="aila naturals logo"
+            width={600}
+            height={500}
+            className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-contain"
+            priority
+          />
           </div>
         </div>
       </div>
