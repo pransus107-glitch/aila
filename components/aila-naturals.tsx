@@ -18,7 +18,7 @@ export function HeroSection() {
               <Leaf className="w-12 h-12 text-primary" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-foreground">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
@@ -167,7 +167,7 @@ export function WhyChooseUs() {
   return (
     <section className="bg-secondary py-16 md:py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why Aila Naturals?</h2>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why aila naturals?</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
