@@ -43,7 +43,7 @@ export function HeroSection() {
             alt="aila naturals logo"
             width={600}
             height={500}
-            className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-contain scale-125"
+            className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-contain scale-150"
             priority
           />
           </div>
