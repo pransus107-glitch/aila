@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex justify-center mb-4">
           <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-2 overflow-hidden">
             <Image
-              src="/images/logo.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-y2rHIXkFqRkpwFAlv0TH9NX3G82JNF.jpeg"
               alt="Aila Naturals Logo"
               fill
               className="object-contain"
