@@ -7,7 +7,7 @@ export function BrandStory() {
         <div className="relative h-[300px] md:h-[350px] rounded-[1.5rem] overflow-hidden">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ailaproducts-2X0GjnOwBGQL7F0L6L78yVBOWzWrGz.png"
-            alt="Natural ingredients used in Aila Naturals products"
+            alt="Natural ingredients used in aila naturals products"
             fill
             className="object-cover"
           />
