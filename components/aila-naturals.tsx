@@ -91,7 +91,7 @@ export function ProductsSection() {
     {
       name: "Rice Flour Scrub",
       description: "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
-      image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-GrVEvNaddzm2jBWszIJV3d86vyTZ8n.jpeg",
       alt: "Aila Naturals Rice Flour Scrub"
     },
     {

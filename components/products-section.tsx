@@ -14,7 +14,7 @@ const products = [
  name: "Rice Flour Scrub",
     description:
      "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
-    image: "/images/rice-flour-scrub.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-GrVEvNaddzm2jBWszIJV3d86vyTZ8n.jpeg",
   },
   {
    name: "Besan Glow Polish",
