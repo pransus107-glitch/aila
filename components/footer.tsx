@@ -16,7 +16,7 @@ export function Footer() {
         </div>
         
         <h3 className="text-xl md:text-2xl font-serif font-semibold mb-2">
-          Aila Naturals
+          aila naturals
         </h3>
         <p className="text-primary-foreground/80">
           Herbal skincare inspired by nature.
