@@ -39,11 +39,11 @@ export function HeroSection() {
         <div className="relative">
           <div className="bg-secondary rounded-[2rem] p-6 md:p-8 shadow-2xl">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-H7AooJP8ClTRiObEf3b39C4RRhQOSI.jpeg"
-            alt="aila naturals logo"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/replacelogo-pClxp1fgUOPzlS1R5jcSSdvszQItKJ.jpeg"
+            alt="aila naturals coming soon"
             width={600}
             height={500}
-            className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-contain scale-150"
+            className="rounded-[1.5rem] w-full h-[350px] md:h-[500px] object-cover"
             priority
           />
           </div>
