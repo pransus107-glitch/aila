@@ -25,7 +25,7 @@ export function HeroSection() {
               />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-balance">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           
