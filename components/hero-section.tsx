@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
@@ -35,9 +36,11 @@ export function HeroSection() {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="rounded-2xl shadow-lg px-6">
-              Shop Products
-            </Button>
+            <Link href="/products">
+              <Button size="lg" className="rounded-2xl shadow-lg px-6">
+                Shop Products
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="lg" 
