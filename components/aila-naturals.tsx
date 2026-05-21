@@ -1,6 +1,6 @@
 "use client"
 
-import { Leaf, Sparkles, Heart, Send, Menu, X } from "lucide-react"
+import { Sparkles, Heart, Send, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -238,12 +238,18 @@ export function Footer() {
     <footer className="bg-foreground text-background py-10 text-center">
       <div className="flex justify-center mb-4">
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-3 flex items-center justify-center">
-          <Leaf className="w-10 h-10 text-primary" />
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+            alt="Aila Naturals Logo"
+            width={80}
+            height={80}
+            className="w-full h-full object-contain"
+          />
         </div>
       </div>
       <h3 className="text-2xl font-serif font-semibold mb-2">Aila Naturals</h3>
       <p className="text-background/80">
-        Herbal skincare inspired by nature.
+        For more queries either get in touch with us or drop a mail at admin@ailanaturals.co.in
       </p>
       <p className="text-background/60 text-sm mt-4">
         &copy; {new Date().getFullYear()} Aila Naturals. All rights reserved.
@@ -259,8 +265,14 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-muted p-1.5 flex items-center justify-center">
-            <Leaf className="w-6 h-6 text-primary" />
+          <div className="w-12 h-12 rounded-xl bg-muted p-1 flex items-center justify-center">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+              alt="Aila Naturals Logo"
+              width={48}
+              height={48}
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-xl font-serif font-bold text-foreground">Aila Naturals</span>
         </div>
