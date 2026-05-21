@@ -55,8 +55,8 @@ export function HeroSection() {
           <div className="bg-secondary rounded-[2rem] p-6 md:p-8 shadow-2xl">
             <div className="relative h-[400px] md:h-[500px] rounded-[1.5rem] overflow-hidden">
               <Image
-                src="/images/hero-skincare.jpg"
-                alt="Herbal skincare products"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/replacelogo-GQBa70xdS137vdxl3KL52aMwSxKIuj.jpeg"
+                alt="aila naturals coming soon"
                 fill
                 className="object-cover"
                 priority
