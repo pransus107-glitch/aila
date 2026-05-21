@@ -242,7 +242,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-xl bg-muted p-1 flex items-center justify-center">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-zJQmwyoyY63XIFTDn4XnQvsaPCeX7n.jpeg"
               alt="aila naturals Logo"
               width={48}
               height={48}
