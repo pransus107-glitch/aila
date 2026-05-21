@@ -3,10 +3,8 @@
 import { Leaf, Sparkles, Heart, Send, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
-import { SurveyModal } from "@/components/survey-modal"
 
 export function HeroSection() {
-  const [isSurveyOpen, setIsSurveyOpen] = useState(false)
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(139,94,60,0.15),transparent_40%)]" />
@@ -32,15 +30,7 @@ export function HeroSection() {
             <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-2xl shadow-lg transition-all font-medium">
               Shop Products
             </button>
-            <button 
-              className="border border-primary text-primary px-6 py-3 rounded-2xl hover:bg-muted transition-all font-medium"
-              onClick={() => setIsSurveyOpen(true)}
-            >
-              Take a Survey
-            </button>
           </div>
-
-          <SurveyModal isOpen={isSurveyOpen} onClose={() => setIsSurveyOpen(false)} />
         </div>
 
         <div className="relative">
