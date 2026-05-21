@@ -14,25 +14,25 @@ function doPost(e) {
     const sheet = SpreadsheetApp.getActiveSheet();
     const data = JSON.parse(e.postData.contents);
     
-    // Append row with: name, email, q1, q2, q3, q4, q5
+    // Append row with: name, email, question1, question2, question3, question4, question5
     sheet.appendRow([
       data.name,
       data.email,
-      data.q1,
-      data.q2,
-      data.q3,
-      data.q4,
-      data.q5
+      data.question1,
+      data.question2,
+      data.question3,
+      data.question4,
+      data.question5
     ]);
     
     return ContentService.createTextOutput(JSON.stringify({
-      status: 'success',
+      success: true,
       message: 'Survey submitted successfully'
     })).setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({
-      status: 'error',
-      message: error.toString()
+      success: false,
+      error: error.toString()
     })).setMimeType(ContentService.MimeType.JSON);
   }
 }
@@ -55,8 +55,24 @@ function doPost(e) {
 Add headers to your Google Sheet:
 - Column A: Name
 - Column B: Email
-- Column C: Question 1
-- Column D: Question 2
-- Column E: Question 3
-- Column F: Question 4
-- Column G: Question 5
+- Column C: Question 1 (What is your skin type?)
+- Column D: Question 2 (What are your skincare concerns?)
+- Column E: Question 3 (Have you used natural skincare before?)
+- Column F: Question 4 (What matters most to you in skincare products?)
+- Column G: Question 5 (How did you hear about aila naturals?)
+
+## How the Survey Works
+
+1. Users click the **"Take a Survey"** button on the home page
+2. A modal form appears with fields for:
+   - Name (required)
+   - Email Address (required)
+   - 5 Survey Questions (optional)
+3. When the user clicks "Submit Survey", the responses are sent to your Google Sheet
+4. Each response is appended as a new row with data in columns A-G
+
+## Troubleshooting
+
+- **"Survey submission is not currently available"** - The GOOGLE_SHEETS_WEBHOOK_URL environment variable is not set
+- **"Failed to submit survey"** - Check that the Google Apps Script deployment URL is correct and the Apps Script code matches the template
+- **No data appearing in sheet** - Verify the Apps Script is deployed as a "Web app" with "Anyone" access
