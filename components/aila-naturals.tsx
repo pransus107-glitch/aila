@@ -1,6 +1,6 @@
 "use client"
 
-import { Sparkles, Heart, Send, Menu, X } from "lucide-react"
+import { Leaf, Sparkles, Heart, Send, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -233,20 +233,23 @@ export function ContactSection() {
   )
 }
 
-export function Footer() {
+export function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <footer className="bg-foreground text-background py-10 text-center">
-      <div className="flex justify-center mb-4">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-3 flex items-center justify-center">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
-            alt="aila naturals Logo"
-            width={48}
-            height={48}
-            className="w-full h-full object-contain"
-          />
-        </div>
-        <span className="text-xl font-serif font-bold text-foreground">aila naturals</span>
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-xl bg-muted p-1 flex items-center justify-center">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+              alt="aila naturals Logo"
+              width={48}
+              height={48}
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <span className="text-xl font-serif font-bold text-foreground">aila naturals</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -286,5 +289,30 @@ export function Footer() {
         </div>
       )}
     </header>
+  )
+}
+
+export function Footer() {
+  return (
+    <footer className="bg-foreground text-background py-10 text-center">
+      <div className="flex justify-center mb-4">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-3 flex items-center justify-center">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+            alt="aila naturals Logo"
+            width={80}
+            height={80}
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+      <h3 className="text-2xl font-serif font-semibold mb-2">aila naturals</h3>
+      <p className="text-background/80">
+        For more queries either get in touch with us or drop a mail at admin@ailanaturals.co.in
+      </p>
+      <p className="text-background/60 text-sm mt-4">
+        &copy; {new Date().getFullYear()} aila naturals. All rights reserved.
+      </p>
+    </footer>
   )
 }
