@@ -17,7 +17,7 @@ export function ContactSection() {
     e.preventDefault()
     
     const whatsappNumber = "919956098430"
-    const text = `Hello Aila Naturals!
+    const text = `Hello aila naturals!
 
 *Name:* ${formData.name}
 *Email:* ${formData.email}
@@ -37,7 +37,7 @@ ${formData.message}`
         Get In Touch
       </h2>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-        Interested in herbal skincare? Connect with Aila Naturals for product
+        Interested in herbal skincare? Connect with aila naturals for product
         updates, collaborations, and orders.
       </p>
 

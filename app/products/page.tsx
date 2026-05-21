@@ -21,7 +21,7 @@ export default function ProductsComingSoon() {
             Coming Soon
           </p>
           <p className="text-muted-foreground mb-6">
-            Be the first to experience Aila Naturals&apos; complete herbal skincare range. Our products are formulated with pure, natural ingredients to nourish and transform your skin.
+            Be the first to experience aila naturals&apos; complete herbal skincare range. Our products are formulated with pure, natural ingredients to nourish and transform your skin.
           </p>
           <div className="space-y-4">
             <p className="text-sm text-muted-foreground">

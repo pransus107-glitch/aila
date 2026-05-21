@@ -18,11 +18,11 @@ export function HeroSection() {
               <Leaf className="w-12 h-12 text-primary" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-foreground">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Nourish your skin with the purity of natural ingredients. Aila Naturals blends
+            Nourish your skin with the purity of natural ingredients. aila naturals blends
             herbal ingredients with timeless beauty rituals to create skincare
             that feels gentle, earthy, and luxurious.
           </p>
@@ -68,7 +68,7 @@ export function BrandStory() {
         <div>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-foreground">Rooted In Nature</h2>
           <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-            At Aila Naturals, we believe skincare should feel pure, calming,
+            At aila naturals, we believe skincare should feel pure, calming,
             and connected to nature. Our herbal formulas are inspired by
             traditional beauty rituals and crafted with carefully selected
             natural ingredients. Every product is designed to refresh, cleanse, and restore your
@@ -86,19 +86,19 @@ export function ProductsSection() {
       name: "Sandalwood Face Pack",
       description: "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
       image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1200&auto=format&fit=crop",
-      alt: "Aila Naturals Sandalwood Face Pack"
+      alt: "aila naturals Sandalwood Face Pack"
     },
     {
       name: "Rice Flour Scrub",
       description: "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
       image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop",
-      alt: "Aila Naturals Rice Flour Scrub"
+      alt: "aila naturals Rice Flour Scrub"
     },
     {
       name: "Besan Glow Polish",
       description: "A deep cleansing scrub infused with besan to gently exfoliate, remove tan, and leave your skin smooth, radiant, and glowing.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-WmPcFGFwkY6AXe0RT2721330QxVxAB.jpeg",
-      alt: "Aila Naturals Besan Glow Polish"
+      alt: "aila naturals Besan Glow Polish"
     }
   ]
 
@@ -167,7 +167,7 @@ export function WhyChooseUs() {
   return (
     <section className="bg-secondary py-16 md:py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why Aila Naturals?</h2>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why aila naturals?</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
@@ -195,7 +195,7 @@ export function ContactSection() {
     <section className="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center">
       <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-foreground">Get In Touch</h2>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-        Interested in herbal skincare? Connect with Aila Naturals for product
+        Interested in herbal skincare? Connect with aila naturals for product
         updates, collaborations, and orders.
       </p>
 
@@ -240,41 +240,13 @@ export function Footer() {
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-3 flex items-center justify-center">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
-            alt="Aila Naturals Logo"
-            width={80}
-            height={80}
+            alt="aila naturals Logo"
+            width={48}
+            height={48}
             className="w-full h-full object-contain"
           />
         </div>
-      </div>
-      <h3 className="text-2xl font-serif font-semibold mb-2">Aila Naturals</h3>
-      <p className="text-background/80">
-        For more queries either get in touch with us or drop a mail at admin@ailanaturals.co.in
-      </p>
-      <p className="text-background/60 text-sm mt-4">
-        &copy; {new Date().getFullYear()} Aila Naturals. All rights reserved.
-      </p>
-    </footer>
-  )
-}
-
-export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-muted p-1 flex items-center justify-center">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
-              alt="Aila Naturals Logo"
-              width={48}
-              height={48}
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <span className="text-xl font-serif font-bold text-foreground">Aila Naturals</span>
+        <span className="text-xl font-serif font-bold text-foreground">aila naturals</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -285,7 +257,7 @@ export function Header() {
         </nav>
 
        <a
-  href="https://wa.me/919956098430?text=Hi%20Aila%20Naturals%2C%20I%20want%20to%20order%20the%20Sandalwood%20Face%20Pack."
+  href="https://wa.me/919956098430?text=Hi%20aila%20naturals%2C%20I%20want%20to%20order%20the%20Sandalwood%20Face%20Pack."
   target="_blank"
   rel="noopener noreferrer"
   className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-3 rounded-xl shadow-md transition-all font-medium inline-block"
