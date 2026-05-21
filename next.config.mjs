@@ -12,6 +12,7 @@ const nextConfig = {
       },
     ],
   },
+  allowedDevOrigins: ['vm-85ck76ywsvehe2v5ox68g8kr.vusercontent.net'],
 }
 
 export default nextConfig
