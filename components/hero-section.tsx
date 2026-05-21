@@ -3,10 +3,15 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
+import { SurveyModal } from "./survey-modal"
 
 export function HeroSection() {
+  const [surveyOpen, setSurveyOpen] = useState(false)
+
   return (
-    <section className="relative overflow-hidden">
+    <>
+      <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(139,94,60,0.15),transparent_40%)]" />
       
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center relative z-10">
@@ -45,8 +50,9 @@ export function HeroSection() {
               variant="outline" 
               size="lg" 
               className="rounded-2xl px-6 border-primary text-primary hover:bg-secondary"
+              onClick={() => setSurveyOpen(true)}
             >
-              Learn More
+              Take a Survey
             </Button>
           </div>
         </div>
@@ -66,5 +72,7 @@ export function HeroSection() {
         </div>
       </div>
     </section>
+    <SurveyModal isOpen={surveyOpen} onClose={() => setSurveyOpen(false)} />
+    </>
   )
 }
