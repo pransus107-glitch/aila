@@ -8,13 +8,13 @@ const products = [
    name: "Sandalwood Face Pack",
    description:
     "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-   image: "/images/sandalwood-face-pack.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-54BVBBVkT3nxDPkmHi1gwlGIOukSK7.jpeg",
   },
   {
  name: "Rice Flour Scrub",
     description:
      "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
-    image: "/images/rice-flour-scrub.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-GrVEvNaddzm2jBWszIJV3d86vyTZ8n.jpeg",
   },
   {
    name: "Besan Glow Polish",
@@ -52,9 +52,9 @@ export function ProductsSection() {
            <div className="relative h-[300px] md:h-[350px] overflow-hidden">
              <Image
                 src={product.image}
-               alt={`Aila Naturals ${product.name}`}
+               alt={`aila naturals ${product.name}`}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-contain group-hover:scale-105 transition-transform duration-500"
              />
             </div>
 

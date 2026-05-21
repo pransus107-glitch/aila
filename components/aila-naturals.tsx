@@ -18,20 +18,17 @@ export function HeroSection() {
               <Leaf className="w-12 h-12 text-primary" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-foreground">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Nourish your skin with the purity of natural ingredients. Aila Naturals blends
+            Nourish your skin with the purity of natural ingredients. aila naturals blends
             herbal ingredients with timeless beauty rituals to create skincare
             that feels gentle, earthy, and luxurious.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-2xl shadow-lg transition-all font-medium">
               Shop Products
-            </button>
-            <button className="border border-primary text-primary px-6 py-3 rounded-2xl hover:bg-muted transition-all font-medium">
-              Learn More
             </button>
           </div>
         </div>
@@ -85,13 +82,13 @@ export function ProductsSection() {
     {
       name: "Sandalwood Face Pack",
       description: "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-      image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1200&auto=format&fit=crop",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-54BVBBVkT3nxDPkmHi1gwlGIOukSK7.jpeg",
       alt: "Aila Naturals Sandalwood Face Pack"
     },
     {
       name: "Rice Flour Scrub",
       description: "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
-      image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-GrVEvNaddzm2jBWszIJV3d86vyTZ8n.jpeg",
       alt: "Aila Naturals Rice Flour Scrub"
     },
     {
@@ -123,7 +120,7 @@ export function ProductsSection() {
               alt={product.alt}
               width={600}
               height={350}
-              className="h-[280px] md:h-[350px] w-full object-cover"
+              className="h-[280px] md:h-[350px] w-full object-contain"
             />
 
             <div className="p-6 md:p-8">
@@ -167,7 +164,7 @@ export function WhyChooseUs() {
   return (
     <section className="bg-secondary py-16 md:py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why Aila Naturals?</h2>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Why aila naturals?</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
@@ -195,7 +192,7 @@ export function ContactSection() {
     <section className="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center">
       <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-foreground">Get In Touch</h2>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-        Interested in herbal skincare? Connect with Aila Naturals for product
+        Interested in herbal skincare? Connect with aila naturals for product
         updates, collaborations, and orders.
       </p>
 
@@ -241,12 +238,12 @@ export function Footer() {
           <Leaf className="w-10 h-10 text-primary" />
         </div>
       </div>
-      <h3 className="text-2xl font-serif font-semibold mb-2">Aila Naturals</h3>
+      <h3 className="text-2xl font-serif font-semibold mb-2">aila naturals</h3>
       <p className="text-background/80">
         Herbal skincare inspired by nature.
       </p>
       <p className="text-background/60 text-sm mt-4">
-        &copy; {new Date().getFullYear()} Aila Naturals. All rights reserved.
+        &copy; {new Date().getFullYear()} aila naturals. All rights reserved.
       </p>
     </footer>
   )
@@ -262,7 +259,7 @@ export function Header() {
           <div className="w-10 h-10 rounded-xl bg-muted p-1.5 flex items-center justify-center">
             <Leaf className="w-6 h-6 text-primary" />
           </div>
-          <span className="text-xl font-serif font-bold text-foreground">Aila Naturals</span>
+          <span className="text-xl font-serif font-bold text-foreground">aila naturals</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">

@@ -18,19 +18,19 @@ export function HeroSection() {
           <div className="flex items-center gap-4 mb-6">
             <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-card p-2 shadow-md overflow-hidden">
               <Image
-                src="/images/logo.jpeg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-y2rHIXkFqRkpwFAlv0TH9NX3G82JNF.jpeg"
                 alt="Aila Naturals Logo"
                 fill
                 className="object-contain"
               />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-balance">
-              Aila Naturals
+              aila naturals
             </h1>
           </div>
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Nourish yourself with the purity of nature. Aila Naturals blends
+            Nourish yourself with the purity of nature. aila naturals blends
             herbal ingredients with timeless beauty rituals to create skincare
             that feels gentle, earthy, and luxurious.
           </p>
@@ -41,13 +41,6 @@ export function HeroSection() {
                 Shop Products
               </Button>
             </Link>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="rounded-2xl px-6 border-primary text-primary hover:bg-secondary"
-            >
-              Learn More
-            </Button>
           </div>
         </div>
 
@@ -55,8 +48,8 @@ export function HeroSection() {
           <div className="bg-secondary rounded-[2rem] p-6 md:p-8 shadow-2xl">
             <div className="relative h-[400px] md:h-[500px] rounded-[1.5rem] overflow-hidden">
               <Image
-                src="/images/hero-skincare.jpg"
-                alt="Herbal skincare products"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/replacelogo-mSKIu3lbOLxZfuXfWLLvWFYDNvyxGn.jpeg"
+                alt="Aila Naturals Coming Soon"
                 fill
                 className="object-cover"
                 priority
