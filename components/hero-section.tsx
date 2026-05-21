@@ -18,7 +18,7 @@ export function HeroSection() {
           <div className="flex items-center gap-4 mb-6">
             <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-card p-2 shadow-md overflow-hidden">
               <Image
-                src="/images/logo.jpeg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-KhOMFwFqsaDAmA9NAU3wZ3aUrKQBKJ.jpeg"
                 alt="aila naturals Logo"
                 fill
                 className="object-contain"
