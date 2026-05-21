@@ -242,7 +242,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-xl bg-muted p-1 flex items-center justify-center">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-zJQmwyoyY63XIFTDn4XnQvsaPCeX7n.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-5T26yQbeUKQYcDuNVrBzqVTMZVJ9l7.jpeg"
               alt="aila naturals Logo"
               width={48}
               height={48}
@@ -298,7 +298,7 @@ export function Footer() {
       <div className="flex justify-center mb-4">
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-card p-3 flex items-center justify-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-XmQWAMPCA31C6YAvITWAcy2yyUXQrE.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-5T26yQbeUKQYcDuNVrBzqVTMZVJ9l7.jpeg"
             alt="aila naturals Logo"
             width={80}
             height={80}
