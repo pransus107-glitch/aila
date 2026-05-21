@@ -1,10 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { SurveyModal } from "@/components/survey-modal"
 
 export function HeroSection() {
+  const [isSurveyOpen, setIsSurveyOpen] = useState(false)
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(139,94,60,0.15),transparent_40%)]" />
@@ -45,10 +48,13 @@ export function HeroSection() {
               variant="outline" 
               size="lg" 
               className="rounded-2xl px-6 border-primary text-primary hover:bg-secondary"
+              onClick={() => setIsSurveyOpen(true)}
             >
-              Learn More
+              Take a Survey
             </Button>
           </div>
+
+          <SurveyModal isOpen={isSurveyOpen} onClose={() => setIsSurveyOpen(false)} />
         </div>
 
         <div className="relative">
