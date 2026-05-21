@@ -1,10 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { NotifyModal } from "./notify-modal"
 
 export function HeroSection() {
+  const [notifyOpen, setNotifyOpen] = useState(false)
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(139,94,60,0.15),transparent_40%)]" />
@@ -41,6 +44,14 @@ export function HeroSection() {
                 Shop Products
               </Button>
             </Link>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="rounded-2xl shadow-lg px-6"
+              onClick={() => setNotifyOpen(true)}
+            >
+              Notify Me
+            </Button>
           </div>
         </div>
 
@@ -58,6 +69,8 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+
+      <NotifyModal open={notifyOpen} onOpenChange={setNotifyOpen} />
     </section>
   )
 }
