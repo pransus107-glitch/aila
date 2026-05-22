@@ -18,14 +18,13 @@ export function BrandStory() {
             Rooted In Nature
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-            At aila naturals, we believe skincare should feel pure, calming,
-            and connected to nature. Our herbal formulas are inspired by
-            traditional beauty rituals and crafted with carefully selected
-            natural ingredients.
+            aila naturals was born from a simple belief- that true beauty comes from nature and when nurtured with care it has the power to heal, restore and glow.
+          </p>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+            We create clean, effective and honest skincare using pure botanicals and time-honoured ingredients that have been trusted fore generations.
           </p>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Every product is designed to refresh, cleanse, and restore your
-            skin while giving you a luxurious self-care experience.
+            Every formula is handcrafted in small batches with intention, so you receive only what your skin truly deserves.
           </p>
         </div>
       </div>
