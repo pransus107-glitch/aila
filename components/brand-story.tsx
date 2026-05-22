@@ -21,8 +21,7 @@ export function BrandStory() {
             aila naturals was born from a simple belief- that true beauty comes from nature and when nurtured with care it has the power to heal, restore and glow.
           </p>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Every product is designed to refresh, cleanse, and restore your
-            skin while giving you a luxurious self-care experience.
+            We create clean, effective and honest skincareusing pure botanicals and time-honoured ingredients that have been trusted fore generations.
           </p>
         </div>
       </div>
