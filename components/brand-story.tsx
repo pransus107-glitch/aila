@@ -20,8 +20,11 @@ export function BrandStory() {
           <p className="text-muted-foreground leading-relaxed text-lg mb-4">
             aila naturals was born from a simple belief- that true beauty comes from nature and when nurtured with care it has the power to heal, restore and glow.
           </p>
-          <p className="text-muted-foreground leading-relaxed text-lg">
+          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
             We create clean, effective and honest skincare using pure botanicals and time-honoured ingredients that have been trusted fore generations.
+          </p>
+          <p className="text-muted-foreground leading-relaxed text-lg">
+            Every formula is handcrafted in small batches with intention, so you receive only what your skin truly deserves.
           </p>
         </div>
       </div>
