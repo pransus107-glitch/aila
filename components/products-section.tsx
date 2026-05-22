@@ -8,25 +8,25 @@ const products = [
    name: "Sandalwood Face Pack",
    description:
     "A refreshing herbal cleanser infused with sandalwood to gently purify, soothe, and brighten your skin naturally.",
-   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sandalwood-54BVBBVkT3nxDPkmHi1gwlGIOukSK7.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sfp-mJSQjlnprEl58mmNTALIFLzAMfVTcR.jpeg",
   },
   {
  name: "Rice Flour Scrub",
     description:
      "A gentle exfoliating scrub made with rice flour to remove dull skin, leaving your face smooth, soft, and radiant.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-GrVEvNaddzm2jBWszIJV3d86vyTZ8n.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rice%20flour%20scrub-EsnoPTaVXh7drVEjVlbKn8Qwf4QPMe.jpeg",
   },
   {
    name: "Besan Glow Polish",
    description:
     "A deep cleansing scrub infused with besan to gently exfoliate, remove tan, and leave your skin smooth, radiant, and glowing.",
-   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-WmPcFGFwkY6AXe0RT2721330QxVxAB.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/besan-lNGvxHwzDSHNJhSIkbNXgMH1bKHtFS.jpeg",
   },
   {
    name: "Rose Clay Mask",
    description:
     "A purifying and glowing mask infused with rose clay to detoxify, purify, and brighten your skin while refining pores and revealing a radiant glow.",
-   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rose%20mask-pC688BFynwWRMKt67QhAOpBJvDdiYW.jpeg",
+   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rose%20mask-McTWXRf8yEWKAGEghtWeftTow2vt6k.jpeg",
   },
 ]
 
