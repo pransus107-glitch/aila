@@ -10,6 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import { SurveyModal } from "@/components/survey-modal"
 
 const products = [
  {
@@ -48,6 +49,7 @@ const products = [
 
 export function ProductsSection() {
   const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null)
+  const [isSurveyOpen, setIsSurveyOpen] = useState(false)
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 md:py-20">
@@ -88,6 +90,13 @@ export function ProductsSection() {
                <Button className="rounded-xl shadow-md">
                   Coming Soon
                 </Button>
+                <Button 
+                  variant="outline" 
+                  className="rounded-xl shadow-md"
+                  onClick={() => setIsSurveyOpen(true)}
+                >
+                  Survey
+                </Button>
                 <Dialog>
                   <Button 
                     variant="outline" 
@@ -125,6 +134,11 @@ export function ProductsSection() {
           </DialogContent>
         )}
       </Dialog>
+
+      <SurveyModal 
+        isOpen={isSurveyOpen} 
+        onClose={() => setIsSurveyOpen(false)} 
+      />
     </section>
   )
 }
