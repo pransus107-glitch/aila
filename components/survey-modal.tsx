@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { submitSurvey } from '@/app/actions/survey'
 import { Loader2 } from 'lucide-react'
 
@@ -19,14 +18,14 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    question1: '',
-    question2: '',
-    question3: '',
-    question4: '',
-    question5: '',
+    skinType: '',
+    skinConcerns: '',
+    productPreference: '',
+    ingredients: '',
+    purchaseDecision: '',
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
@@ -57,11 +56,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
         setFormData({
           name: '',
           email: '',
-          question1: '',
-          question2: '',
-          question3: '',
-          question4: '',
-          question5: '',
+          skinType: '',
+          skinConcerns: '',
+          productPreference: '',
+          ingredients: '',
+          purchaseDecision: '',
         })
         onClose()
       } else {
@@ -122,67 +121,97 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 1 */}
           <div>
-            <label className="block text-sm font-medium mb-2">Question 1: What is your skin type?</label>
-            <Textarea
-              name="question1"
-              value={formData.question1}
+            <label className="block text-sm font-medium mb-2">1. What is your skin type? *</label>
+            <select
+              name="skinType"
+              value={formData.skinType}
               onChange={handleChange}
-              placeholder="Your answer..."
+              required
               disabled={isSubmitting}
-              rows={2}
-            />
+              className="w-full border border-input rounded-md px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="dry">Dry</option>
+              <option value="oily">Oily</option>
+              <option value="combination">Combination</option>
+              <option value="sensitive">Sensitive</option>
+            </select>
           </div>
 
           {/* Question 2 */}
           <div>
-            <label className="block text-sm font-medium mb-2">Question 2: What are your skincare concerns?</label>
-            <Textarea
-              name="question2"
-              value={formData.question2}
+            <label className="block text-sm font-medium mb-2">2. What are your main skincare concerns? *</label>
+            <select
+              name="skinConcerns"
+              value={formData.skinConcerns}
               onChange={handleChange}
-              placeholder="Your answer..."
+              required
               disabled={isSubmitting}
-              rows={2}
-            />
+              className="w-full border border-input rounded-md px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="acne">Acne and breakouts</option>
+              <option value="aging">Aging and wrinkles</option>
+              <option value="hyperpigmentation">Hyperpigmentation and dark spots</option>
+              <option value="redness">Redness and irritation</option>
+            </select>
           </div>
 
           {/* Question 3 */}
           <div>
-            <label className="block text-sm font-medium mb-2">Question 3: Have you used natural skincare before?</label>
-            <Textarea
-              name="question3"
-              value={formData.question3}
+            <label className="block text-sm font-medium mb-2">3. What product category interests you most? *</label>
+            <select
+              name="productPreference"
+              value={formData.productPreference}
               onChange={handleChange}
-              placeholder="Your answer..."
+              required
               disabled={isSubmitting}
-              rows={2}
-            />
+              className="w-full border border-input rounded-md px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="cleansers">Cleansers and face washes</option>
+              <option value="serums">Serums and treatments</option>
+              <option value="moisturizers">Moisturizers and creams</option>
+              <option value="masks">Masks and exfoliators</option>
+            </select>
           </div>
 
           {/* Question 4 */}
           <div>
-            <label className="block text-sm font-medium mb-2">Question 4: What matters most to you in skincare products?</label>
-            <Textarea
-              name="question4"
-              value={formData.question4}
+            <label className="block text-sm font-medium mb-2">4. Which ingredient appeals to you most? *</label>
+            <select
+              name="ingredients"
+              value={formData.ingredients}
               onChange={handleChange}
-              placeholder="Your answer..."
+              required
               disabled={isSubmitting}
-              rows={2}
-            />
+              className="w-full border border-input rounded-md px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="organic">Organic and natural ingredients</option>
+              <option value="hyaluronic">Hyaluronic acid and hydration</option>
+              <option value="retinol">Retinol and anti-aging</option>
+              <option value="botanical">Botanical extracts and oils</option>
+            </select>
           </div>
 
           {/* Question 5 */}
           <div>
-            <label className="block text-sm font-medium mb-2">Question 5: How did you hear about aila naturals?</label>
-            <Textarea
-              name="question5"
-              value={formData.question5}
+            <label className="block text-sm font-medium mb-2">5. What influences your skincare purchase decision? *</label>
+            <select
+              name="purchaseDecision"
+              value={formData.purchaseDecision}
               onChange={handleChange}
-              placeholder="Your answer..."
+              required
               disabled={isSubmitting}
-              rows={2}
-            />
+              className="w-full border border-input rounded-md px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="ingredients">Quality of ingredients</option>
+              <option value="brand">Brand reputation and values</option>
+              <option value="price">Price and value for money</option>
+              <option value="results">Visible results and effectiveness</option>
+            </select>
           </div>
 
           {/* Submit Button */}
