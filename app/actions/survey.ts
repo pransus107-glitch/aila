@@ -3,11 +3,11 @@
 interface SurveyData {
   name: string
   email: string
-  question1: string
-  question2: string
-  question3: string
-  question4: string
-  question5: string
+  skinType: string
+  skinConcerns: string
+  productPreference: string
+  ingredients: string
+  purchaseDecision: string
 }
 
 export async function submitSurvey(data: SurveyData) {
@@ -21,11 +21,11 @@ export async function submitSurvey(data: SurveyData) {
       const payload = {
         name: data.name,
         email: data.email,
-        question1: data.question1,
-        question2: data.question2,
-        question3: data.question3,
-        question4: data.question4,
-        question5: data.question5,
+        skinType: data.skinType,
+        skinConcerns: data.skinConcerns,
+        productPreference: data.productPreference,
+        ingredients: data.ingredients,
+        purchaseDecision: data.purchaseDecision,
         timestamp: new Date().toISOString(),
       }
 
@@ -58,11 +58,11 @@ export async function submitSurvey(data: SurveyData) {
     const emailPayload = {
       name: data.name,
       email: data.email,
-      question1: `Q1 (Skin type): ${data.question1}`,
-      question2: `Q2 (Concerns): ${data.question2}`,
-      question3: `Q3 (Natural skincare): ${data.question3}`,
-      question4: `Q4 (What matters): ${data.question4}`,
-      question5: `Q5 (How you heard): ${data.question5}`,
+      skinType: `Skin Type: ${data.skinType}`,
+      skinConcerns: `Skin Concerns: ${data.skinConcerns}`,
+      productPreference: `Product Preference: ${data.productPreference}`,
+      ingredients: `Preferred Ingredients: ${data.ingredients}`,
+      purchaseDecision: `Purchase Decision Factor: ${data.purchaseDecision}`,
       timestamp: new Date().toISOString(),
     }
 
