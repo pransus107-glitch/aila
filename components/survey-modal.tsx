@@ -49,6 +49,8 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
       return
     }
 
+    console.log('[v0] Form data before submission:', formData)
+
     try {
       const result = await submitSurvey(formData)
       
@@ -121,12 +123,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 1 */}
           <div>
-            <label className="block text-sm font-medium mb-2">1. What is your skin type? *</label>
+            <label className="block text-sm font-medium mb-2">1. What is your skin type?</label>
             <select
               name="skinType"
               value={formData.skinType}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full border border-input rounded-md px-3 py-2 text-sm"
             >
@@ -140,12 +141,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 2 */}
           <div>
-            <label className="block text-sm font-medium mb-2">2. What are your main skincare concerns? *</label>
+            <label className="block text-sm font-medium mb-2">2. What are your main skincare concerns?</label>
             <select
               name="skinConcerns"
               value={formData.skinConcerns}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full border border-input rounded-md px-3 py-2 text-sm"
             >
@@ -159,12 +159,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 3 */}
           <div>
-            <label className="block text-sm font-medium mb-2">3. What product category interests you most? *</label>
+            <label className="block text-sm font-medium mb-2">3. What product category interests you most?</label>
             <select
               name="productPreference"
               value={formData.productPreference}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full border border-input rounded-md px-3 py-2 text-sm"
             >
@@ -178,12 +177,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 4 */}
           <div>
-            <label className="block text-sm font-medium mb-2">4. Which ingredient appeals to you most? *</label>
+            <label className="block text-sm font-medium mb-2">4. Which ingredient appeals to you most?</label>
             <select
               name="ingredients"
               value={formData.ingredients}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full border border-input rounded-md px-3 py-2 text-sm"
             >
@@ -197,12 +195,11 @@ export function SurveyModal({ isOpen, onClose }: SurveyModalProps) {
 
           {/* Question 5 */}
           <div>
-            <label className="block text-sm font-medium mb-2">5. What influences your skincare purchase decision? *</label>
+            <label className="block text-sm font-medium mb-2">5. What influences your skincare purchase decision?</label>
             <select
               name="purchaseDecision"
               value={formData.purchaseDecision}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full border border-input rounded-md px-3 py-2 text-sm"
             >
