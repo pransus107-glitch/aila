@@ -15,6 +15,8 @@ export async function submitSurvey(data: SurveyData) {
     // Try Google Apps Script first if webhook URL is configured
     const googleScriptUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL
 
+    console.log('[v0] Survey data received on server:', JSON.stringify(data, null, 2))
+
     if (googleScriptUrl) {
       console.log('[v0] Submitting to Google Sheets via webhook')
       
@@ -28,6 +30,8 @@ export async function submitSurvey(data: SurveyData) {
         purchaseDecision: data.purchaseDecision,
         timestamp: new Date().toISOString(),
       }
+
+      console.log('[v0] Payload being sent:', JSON.stringify(payload, null, 2))
 
       try {
         const response = await fetch(googleScriptUrl, {
