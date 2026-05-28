@@ -38,52 +38,40 @@ export async function submitSurvey(data: SurveyData) {
           body: JSON.stringify(payload),
         })
 
-        if (response.ok) {
-          const result = await response.json()
-          if (result.success) {
-            console.log('[v0] Survey submitted to Google Sheets successfully')
+        const responseText = await response.text()
+        console.log('[v0] Google Sheets response:', responseText, 'Status:', response.status)
+
+        if (response.ok || response.status === 200) {
+          try {
+            const result = JSON.parse(responseText)
+            if (result.success) {
+              console.log('[v0] Survey submitted to Google Sheets successfully')
+              return { success: true }
+            }
+          } catch (parseError) {
+            console.log('[v0] Google Sheets accepted the request (status 200)')
             return { success: true }
           }
         }
       } catch (webhookError) {
-        console.warn('[v0] Google Sheets submission failed, trying Formspree fallback:', webhookError)
+        console.error('[v0] Google Sheets submission error:', webhookError)
+        return {
+          success: false,
+          error: 'Failed to submit survey. Please check that the Google Sheets webhook URL is configured correctly.',
+        }
       }
-    }
-
-    // Fallback to Formspree for email submission
-    console.log('[v0] Using Formspree fallback for survey submission')
-    
-    const formspreeUrl = 'https://formspree.io/f/xyzgwkde'
-    
-    const emailPayload = {
-      name: data.name,
-      email: data.email,
-      skinType: `Skin Type: ${data.skinType}`,
-      skinConcerns: `Skin Concerns: ${data.skinConcerns}`,
-      productPreference: `Product Preference: ${data.productPreference}`,
-      ingredients: `Preferred Ingredients: ${data.ingredients}`,
-      purchaseDecision: `Purchase Decision Factor: ${data.purchaseDecision}`,
-      timestamp: new Date().toISOString(),
-    }
-
-    const response = await fetch(formspreeUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(emailPayload),
-    })
-
-    if (!response.ok) {
-      console.error('[v0] Formspree submission failed:', response.statusText)
+    } else {
+      console.warn('[v0] GOOGLE_SHEETS_WEBHOOK_URL environment variable not set')
       return {
         success: false,
-        error: 'Failed to submit survey. Please try again.',
+        error: 'Survey submission is not currently available. Please contact support.',
       }
     }
 
-    console.log('[v0] Survey submitted successfully via email')
-    return { success: true }
+    return {
+      success: false,
+      error: 'Failed to submit survey. Please try again.',
+    }
   } catch (error) {
     console.error('[v0] Error submitting survey:', error)
     return {
